@@ -1,0 +1,1 @@
+The goal of this exercise is to create flashcards on a webpage of HTML basics with examples for study purpose and integrate what I'm learning.
