@@ -1,1 +1,1 @@
-The goal of this exercise is to create flashcards on a webpage of HTML basics with examples for study purpose and integrate what I'm learning.
+The goal of this exercise is to create flashcards on a webpage of HTML basics with examples for study purpose and integrate what I'm learning. It is meant for my study style and is not meant to be a comprehensive learning guide.

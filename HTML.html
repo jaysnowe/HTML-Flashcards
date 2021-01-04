@@ -27,15 +27,16 @@
             right: 0;
         }
     </style>
+    
 </head>
 <body>
     <h2>HTML Basics</h2>
     <p>These flashcards drill you on HTML basics with  code snippet examples.</p><br>
-    <div class="question">HTML
-        <button class="show-hide">Show Reverse</button>
+    <div id="question1" class="question">HTML
+        <button onClick="FlipCard()" id="button1" class="show-hide">Show Reverse</button>
     </div>
-    <div class="answer">Hypertext Markup Language is a markup language rather than a programming language, which means it traditionally defines how a page will be presented rather than how elements behave. It holds all the instructions for how the web page is displayed by ordering elements that enclose the content.
-        <button class="show-hide">Show Reverse</button>
+    <div id="answer1" class="answer">Hypertext Markup Language is a markup language rather than a programming language, which means it defines how a page will be presented rather than how elements behave. It holds all the instructions for how the web page is displayed by ordering elements that enclose the content.
+        <!-- <button class="show-hide">Show Reverse</button> -->
     </div>
     <div class="question">CSS
         <button class="show-hide">Show Reverse</button></div>
@@ -48,16 +49,41 @@
     <div class="answer">Elements are the individual building blocks of HTML. Most have a beginning tag (&lt;p&gt;) and an ending tag(&lt;/p&gt;). A few tags like &lt;img&gt; and &lt;br&gt; are called empty tags and only have a starting tag.
         <button class="show-hide">Show Reverse</button>
     </div>
+    <div class="question">Elements of a Basic HTML doc
+        <button class="show-hide">Show Reverse</button>
+    </div>
+    <div class="answer">&lt;!DOCTYPE html&gt; - This says this document is using HTML5<br> 
+        &lt;html lang="en"&gt; - The root element. All page elements are nestled in it<br> 
+        &lt;head&gt; - holds all the (meta) information about the page. Not visible to viewer<br>
+            &lt;meta charset="UTF-8"&gt; - Allows for easy storage of ascii (English and number) characters, but will also support characters for other languages<br>
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; - Sets the browser width (probably) to screen width. Introduced with Safari to help with mobile viewing <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag">More viewport tag info</a><br>
+            
+            &lt;title&gt;Document&lt;/title&gt; - Subject of the document contents that also functions as the suggested bookmark title<br>
+        &lt;/head&gt;<br>
+        &lt;body&gt; - Contains all elements that are visible<br>
+            
+        &lt;/body&gt;<br>
+        &lt;/html&gt;<br>
+        Easy way - Type "!" and tab at the top of an empty .html page
+        <button class="show-hide">Show Reverse</button>
+    </div>
     <div class="question">tags
         <button class="show-hide">Show Reverse</button>
     </div>
-    <div class="answer">
+    <div class="answer">One half of the element. An opening tag has a beginning angle bracket(&lt;), the content (i.e. p or div), and an ending angle bracket with a forward slash(/&gt;). 
+        <ul>Type Examples:
+            <li>&lt;p&gt; - paragraph</li>
+            <li>&lt;div&gt; - general divider/grouping of elements. Most widely used type of element</li>
+            <li>&lt;h1&gt; - heading tags make larger text by default than div or p. There are h1 through h6 with h1 being the largest</li>
+            <li>&lt;a&gt; - anchor tags hold links</li>
+            <li>&lt;img&gt; - image tags hold images</li>
+        </ul>
         <button class="show-hide">Show Reverse</button>
     </div>
     <div class="question">attributes
         <button class="show-hide">Show Reverse</button>
     </div>
-    <div class="answer">
+    <div class="answer">Give extra information about the element they live in. They always appear in the starting tag of the element they belong to. In &lt;a href="google.com"&lt;Google link&lt;/a&gt;, &lt;a&gt; is the anchor element to hold a link, href="" is the attribute that holds the destination URL, and Google link is the inner HTML that will be the hyperlink.
         <button class="show-hide">Show Reverse</button>
     </div>
     <div class="question">forms
@@ -97,6 +123,17 @@
         <button class="show-hide">Show Reverse</button>
     </div>
     
+    <script>
+        function FlipCard(){
+            //console.log("It lives!");
+            const question = document.getElementById('question1');
+            const original = document.getElementById(answer1);
+            const clone = original.cloneNode(true);
 
+            while (question.firstChild) question.firstChild.remove();
+
+            question.replaceWith(clone);
+        }
+    </script>
 </body>
 </html>
