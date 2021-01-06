@@ -4,30 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic HTML How-To</title>
-    <style>
-        .question{
-            border-style: solid;
-            padding: 20vh 20vw;
-            margin: 5vh 5vw;
-            text-align: center;
-            position: relative;
-            
-        }
-        .answer{
-            border-style: solid;
-            padding: 20vh 20vw;
-            margin: 5vh 5vw;
-            background-image: url("indexcard.png");
-            background-size: 100%;
-            position: relative;
-        }
-        .show-hide{
-            position: absolute;
-            bottom: 0;
-            right: 0;
-        }
-    </style>
-    
+    <link rel="stylesheet" href="HTML.css">
+    <!-- TO-DO look into incorporating favicon
+    <link rel="shortcut icon" href="indexcard.png" type="image/x-icon"> -->
+    <script src="HTML.js" defer></script>
 </head>
 <body>
     <h2>HTML Basics</h2>
@@ -53,7 +33,7 @@
         <button class="show-hide">Show Reverse</button>
     </div>
     <div class="answer">&lt;!DOCTYPE html&gt; - This says this document is using HTML5<br> 
-        &lt;html lang="en"&gt; - The root element. All page elements are nestled in it<br> 
+        &lt;html lang="en"&gt; - The root element. All page elements are nestled in it. lang="en" is an attribute that must always be present.<br> 
         &lt;head&gt; - holds all the (meta) information about the page. Not visible to viewer<br>
             &lt;meta charset="UTF-8"&gt; - Allows for easy storage of ascii (English and number) characters, but will also support characters for other languages<br>
             &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt; - Sets the browser width (probably) to screen width. Introduced with Safari to help with mobile viewing <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag">More viewport tag info</a><br>
@@ -72,27 +52,101 @@
     </div>
     <div class="answer">One half of the element. An opening tag has a beginning angle bracket(&lt;), the content (i.e. p or div), and an ending angle bracket with a forward slash(/&gt;). 
         <ul>Type Examples:
-            <li>&lt;p&gt; - paragraph</li>
+            <li>&lt;p&gt; - paragraph; always starts on a new line</li>
             <li>&lt;div&gt; - general divider/grouping of elements. Most widely used type of element</li>
-            <li>&lt;h1&gt; - heading tags make larger text by default than div or p. There are h1 through h6 with h1 being the largest</li>
+            <li>&lt;h1&gt; - heading tags make larger text by default than div or p. There are h1 through h6 with h1 being the largest. Search engines use them to structure and index content, so headings should not be used for size or boldness, only for structuring the document.</li>
             <li>&lt;a&gt; - anchor tags hold links</li>
             <li>&lt;img&gt; - image tags hold images</li>
         </ul>
+        <a href="https://www.w3schools.com/tags/default.asp">Tag Reference List w3schools</a>
         <button class="show-hide">Show Reverse</button>
     </div>
     <div class="question">attributes
         <button class="show-hide">Show Reverse</button>
     </div>
-    <div class="answer">Give extra information about the element they live in. They always appear in the starting tag of the element they belong to. In &lt;a href="google.com"&lt;Google link&lt;/a&gt;, &lt;a&gt; is the anchor element to hold a link, href="" is the attribute that holds the destination URL, and Google link is the inner HTML that will be the hyperlink.
+    <div class="answer">Give extra information about the element they live in. All elements can have one or more attributes. They always appear in the starting tag of the element they belong to. In &lt;a href="google.com"&gt;Google link&lt;/a&gt;, &lt;a&gt; is the anchor element to hold a link, href="" is the attribute that holds the destination URL, and Google link is the inner HTML that will be the hyperlink.<br>
+    Attributes are usually structured like name_of_attribute = "value_of_attribute".
         <button class="show-hide">Show Reverse</button>
     </div>
-    <div class="question">forms
+    <div class="question">&lt;img&gt; element attributes: src, width/height, alt, and style
         <button class="show-hide">Show Reverse</button>
     </div>
     <div class="answer">
+        <ol>src=""
+            <li>Absolute URL - goes straight to specified website, but beware this option for copyright infringement or if the link is removed at some point in the future
+            </li>
+            <li>Relative URL - the file/image is saved locally and goes to specified location on your machine/where it is hosted. Better option.</li>
+        </ol>
+        <ol>width="" and height=""
+            <li>If these are not set as attributes, the webpage will size strangely as it is loading up. It helps reserve the space that will be needed.</li>
+        </ol>
+        <ol>alt=""
+            <li>accessibility feature that should always be used for images</li>
+            <li>If the image cannot be displayed, the text will appear instead, and it will also help screen readers describe to visually impaired users what the image contains</li>
+        </ol>
+        <ol>style=""
+            <li>More often styling is done with CSS instead</li>
+            <li>i.e. style="color: red"</li>
+        </ol>
+        <a href="https://www.w3schools.com/tags/ref_attributes.asp">Attribute Reference List w3schools</a>
         <button class="show-hide">Show Reverse</button>
     </div>
-    <div class="question">&lt;div&gt;
+    <div class="question">accessibility tips with attributes: alt, title
+        
+        <button class="show-hide">Show Reverse</button>
+    </div>
+    <div class="answer"><ol>
+        <li>&lt;img alt=""&gt; - If the image cannot be displayed, the text will appear instead, and it will also help screen readers describe to visually impaired users what the image contains. Mostly seen with the img element.</li>
+        <li>&lt;p title=""&gt; - this attribute makes extra information appear whenever the user hovers over this element. Can be used with most elements.</li>
+    </ol>
+        <button class="show-hide">Show Reverse</button>
+    </div>
+    <div class="question">format a paragraph with new lines, visible line break, block text that recognizes spacing, and block quotations
+        <button class="show-hide">Show Reverse</button>
+    </div>
+    <div class="answer">
+        <ul>
+            <li>&lt;p&gt; or &lt;br&gt; - moved subsequent text to line below. &lt;p&gt; has two tags, but &lt;br&gt; is an empty tag that can be within a &lt;p&gt; tag.</li>
+            <li>&lt;hr&gt; - empty tag that acts like &lt;br&gt; but shows a horizontal line across the page.</li>
+            <li>&lt;pre&gt; - preformatted text holds the format of the spacing in its inner HTML. Good for poetry styles.
+                <pre>My Bonnie
+                    lies over
+                    the 
+                    ocean. (even automatic tabs are retained.)
+                </pre>
+            </li>
+            <li>&lt;blockquote cite=""&gt; - block quotations with a cite attribute that can be reached with a right-click on the text.
+                <blockquote cite="https://www.indiewire.com/2018/07/steven-universe-queer-rebecca-sugar-1201983866/">In the Season 1 finale “Jail Break,” it is revealed that Steven’s guardian, Garnet, is the product of a romantic fusion between Ruby and Sapphire. Garnet is the living embodiment of a normalized lesbian romance, as her song goes, “I’m made of love.” The origin story of Garnet’s fusion form is told with Disney fairy tale flair in season two’s “The Answer.” After narrowly escaping a shattering (i.e. a death sentence in their culture) due to their forbidden fusion, Ruby and Sapphire sing their signature song number “Something Entirely New” to ponder the emotional mysteries and anxieties of loving outside social constraints.</blockquote>
+            </li>
+        </ul>
+        <button class="show-hide">Show Reverse</button>
+    </div>
+    <div class="question">text formatting: <b>bold</b>, <strong>strong</strong>, <i>italic</i>, <em>emphasized</em>, <sub>subscript</sub>, <sup>superscript</sup>, <mark>highlighted</mark>, <abbr title="abbreviations">ABBR</abbr>
+        <button class="show-hide">Show Reverse</button>
+    </div>
+    <div class="answer">
+        <ul>
+            <li>&lt;b&gt; - inner HTML is bolded</li>
+            <li>&lt;strong&gt; - inner HTML marked important</li>
+            <li>&lt;i&gt; - inner HTML is italicized</li>
+            <li>&lt;em&gt; - inner HTML is emphasized</li>
+            <li>&lt;sub&gt; - inner HTML is subscripted</li>
+            <li>&lt;sup&gt; - inner HTML is superscripted</li>
+            <li>&lt;mark&gt; - inner HTML is hightlighted </li>
+            <li>&lt;abbr title=""&gt; - shows user what abbreviation stands for in mouse over</li>
+        </ul>
+        <button class="show-hide">Show Reverse</button>
+    </div>
+    <div class="question">HTML & Color: RGB, RGBA, HEX, HSL, & HSLA
+        <button class="show-hide">Show Reverse</button>
+    </div>
+    <div class="answer">
+        <ul>
+            <li>RGB - </li>
+        </ul>
+        <button class="show-hide">Show Reverse</button>
+    </div>
+    <div class="question">forms
         <button class="show-hide">Show Reverse</button>
     </div>
     <div class="answer">
@@ -123,17 +177,6 @@
         <button class="show-hide">Show Reverse</button>
     </div>
     
-    <script>
-        function FlipCard(){
-            //console.log("It lives!");
-            const question = document.getElementById('question1');
-            const original = document.getElementById(answer1);
-            const clone = original.cloneNode(true);
-
-            while (question.firstChild) question.firstChild.remove();
-
-            question.replaceWith(clone);
-        }
-    </script>
+    
 </body>
 </html>

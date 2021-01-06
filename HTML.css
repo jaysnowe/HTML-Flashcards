@@ -1,0 +1,21 @@
+.question{
+    border-style: solid;
+    padding: 20vh 20vw;
+    margin: 5vh 5vw;
+    text-align: center;
+    position: relative;
+    
+}
+.answer{
+    border-style: solid;
+    padding: 20vh 20vw;
+    margin: 5vh 5vw;
+    background-image: url("indexcard.png");
+    background-size: 100%;
+    position: relative;
+}
+.show-hide{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
