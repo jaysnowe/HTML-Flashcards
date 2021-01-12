@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jay Forrest Snowe">
+    <meta name="description" content="HTML flashcards that drill on the basics.">
     <title>Basic HTML How-To</title>
     <link rel="stylesheet" href="HTML.css">
-    <!-- TO-DO look into incorporating favicon
-    <link rel="shortcut icon" href="indexcard.png" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script src="HTML.js" defer></script>
 </head>
 <body>
     <h2>HTML Basics</h2>
-    <p>These flashcards drill you on HTML basics with  code snippet examples.</p><br>
+    <p>These flashcards drill on HTML basics with  code snippet examples where applicable. The main sources of reference material for these cards are <a href="https://w3schools.com/html">w3schools.com</a> and <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML">Mozilla developer documentation</a></p><br>
     <div id="question1" class="question">HTML
         <button onClick="FlipCard()" id="button1" class="show-hide">Show Reverse</button>
     </div>
@@ -142,7 +143,42 @@
     </div>
     <div class="answer">
         <ul>
-            <li>RGB - </li>
+            <li>RGB (red, green, blue) - each value is from least to most intense (0-255)
+                <ol>Examples of pure colors:
+                    <li>RED = rgb(255, 0, 0)</li>
+                    <li>GREEN = rgb(0, 255, 0)</li>
+                    <li>BLUE = rgb(0, 0, 255)</li>
+                    <li>BLACK = rgb(0, 0, 0)</li>
+                    <li>WHITE = rgb(255, 255, 255)</li>
+                    <li>GREY (all values equal) rgb(20, 20, 20) or rgb(200, 200, 200)</li>
+                </ol>
+            </li>
+            <li>RGBA (red, green, blue, alpha) - rgb are still 0-255, and alpha (opacity) is 0.0(fully transparent) to 1.0 (fully opaque)</li>
+            <li>HEX (hexidecimal: rrggbb) - each digit is from least to most intense (0-9, then a-f)
+                <ol>Examples of pure colors:
+                    <li>RED = #ff0000</li>
+                    <li>GREEN = #00ff00</li>
+                    <li>BLUE = #0000ff</li>
+                    <li>BLACK = #000000</li>
+                    <li>WHITE = #ffffff</li>
+                    <li>GREY = (all values equal) #404040 or #dcdcdc</li>
+                </ol>
+            </li>
+            <li>HSL (hue, saturation, light) - hue is a degree on the color wheel (0-360), saturation is a % value (0% is grey - 100% is full color), and light is a % value (0% is black - 100% is white)
+                <ol>Examples of pure colors:
+                    <li>RED = hsl(0, 100%, 50%)</li>
+                    <li>GREEN = hsl(147, 50%, 50%)</li>
+                    <li>BLUE = hsl(240, 100%, 50%)</li>
+                    <li>BLACK = hsl(0, 100%, 0%)</li>
+                    <li>WHITE = hsl(0, 100%, 100%)</li>
+                    <li>GREY = hsl(any number, 0%, 100%) - any color can have its grey equivalent</li>
+                </ol>
+            </li>
+            <li>HSLA (hsl with alpha as an opacity value). 0.0 is fully transparent to 1.0 is fully opaque.</li>
+        </ul>
+        <ul>Syntax for use: 
+            <li>CSS - body {background-color:rgb(255, 95, 71)}</li>
+            <li>Inline HTML - &lt;h1 style="background-color:rgb(255, 95, 71)"&gt;</li>
         </ul>
         <button class="show-hide">Show Reverse</button>
     </div>
