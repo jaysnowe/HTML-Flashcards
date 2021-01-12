@@ -138,7 +138,7 @@
         </ul>
         <button class="show-hide">Show Reverse</button>
     </div>
-    <div class="question">HTML & Color: RGB, RGBA, HEX, HSL, & HSLA
+    <div class="question">HTML & Color: RGB & RGBA
         <button class="show-hide">Show Reverse</button>
     </div>
     <div class="answer">
@@ -154,32 +154,44 @@
                 </ol>
             </li>
             <li>RGBA (red, green, blue, alpha) - rgb are still 0-255, and alpha (opacity) is 0.0(fully transparent) to 1.0 (fully opaque)</li>
-            <li>HEX (hexidecimal: rrggbb) - each digit is from least to most intense (0-9, then a-f)
-                <ol>Examples of pure colors:
-                    <li>RED = #ff0000</li>
-                    <li>GREEN = #00ff00</li>
-                    <li>BLUE = #0000ff</li>
-                    <li>BLACK = #000000</li>
-                    <li>WHITE = #ffffff</li>
-                    <li>GREY = (all values equal) #404040 or #dcdcdc</li>
-                </ol>
-            </li>
-            <li>HSL (hue, saturation, light) - hue is a degree on the color wheel (0-360), saturation is a % value (0% is grey - 100% is full color), and light is a % value (0% is black - 100% is white)
-                <ol>Examples of pure colors:
-                    <li>RED = hsl(0, 100%, 50%)</li>
-                    <li>GREEN = hsl(147, 50%, 50%)</li>
-                    <li>BLUE = hsl(240, 100%, 50%)</li>
-                    <li>BLACK = hsl(0, 100%, 0%)</li>
-                    <li>WHITE = hsl(0, 100%, 100%)</li>
-                    <li>GREY = hsl(any number, 0%, 100%) - any color can have its grey equivalent</li>
-                </ol>
-            </li>
-            <li>HSLA (hsl with alpha as an opacity value). 0.0 is fully transparent to 1.0 is fully opaque.</li>
-        </ul>
-        <ul>Syntax for use: 
+        </ul><hr>
+        <ul>Syntax for all color use: 
             <li>CSS - body {background-color:rgb(255, 95, 71)}</li>
             <li>Inline HTML - &lt;h1 style="background-color:rgb(255, 95, 71)"&gt;</li>
-        </ul>
+        <button class="show-hide">Show Reverse</button>
+    </div>
+    <div class="question">HTML & Color: HEX
+        <button class="show-hide">Show Reverse</button>
+    </div>
+    <div class="answer">
+    <ul>HEX (hexidecimal: rrggbb) - each digit is from least to most intense (0-9, then a-f)
+        <ol>Examples of pure colors:
+            <li>RED = #ff0000</li>
+            <li>GREEN = #00ff00</li>
+            <li>BLUE = #0000ff</li>
+            <li>BLACK = #000000</li>
+            <li>WHITE = #ffffff</li>
+            <li>GREY = (all values equal) #404040 or #dcdcdc</li>
+        </ol>
+    </ul>
+        <button class="show-hide">Show Reverse</button>
+    </div>
+    <div class="question">HTML & Color: HSL & HSLA
+        <button class="show-hide">Show Reverse</button>
+    </div>
+    <div class="answer">
+        <li>HSL (hue, saturation, light) - hue is a degree on the color wheel (0-360), saturation is a % value (0% is grey - 100% is full color), and light is a % value (0% is black - 100% is white)
+            <ol>Examples of pure colors:
+                <li>RED = hsl(0, 100%, 50%)</li>
+                <li>GREEN = hsl(147, 50%, 50%)</li>
+                <li>BLUE = hsl(240, 100%, 50%)</li>
+                <li>BLACK = hsl(0, 100%, 0%)</li>
+                <li>WHITE = hsl(0, 100%, 100%)</li>
+                <li>GREY = hsl(any number, 0%, 100%) - any color can have its grey equivalent</li>
+            </ol>
+        </li>
+        <li>HSLA (hsl with alpha as an opacity value). 0.0 is fully transparent to 1.0 is fully opaque.</li>
+    </ul>
         <button class="show-hide">Show Reverse</button>
     </div>
     <div class="question">forms
@@ -213,6 +225,6 @@
         <button class="show-hide">Show Reverse</button>
     </div>
     
-    
+    <footer >Number of w3schools HTML Tutorial sections completed: 14/76. Cards created: <span id="countCards"></span></footer>
 </body>
 </html>
