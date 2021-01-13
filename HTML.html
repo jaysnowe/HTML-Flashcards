@@ -14,24 +14,24 @@
     <h2>HTML Basics</h2>
     <p>These flashcards drill on HTML basics with  code snippet examples where applicable. The main sources of reference material for these cards are <a href="https://w3schools.com/html">w3schools.com</a> and <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML">Mozilla developer documentation</a></p><br>
     <div id="question1" class="question">HTML
-        <button onClick="FlipCard()" id="button1" class="show-hide">Show Reverse</button>
+        <button onclick="FlipCard()" id="button1" class="show-answer">Show Reverse</button>
     </div>
     <div id="answer1" class="answer">Hypertext Markup Language is a markup language rather than a programming language, which means it defines how a page will be presented rather than how elements behave. It holds all the instructions for how the web page is displayed by ordering elements that enclose the content.
-        <!-- <button class="show-hide">Show Reverse</button> -->
+        <button onclick="FlipCard()" id="button1" class="show-question">Show Reverse</button>
     </div>
     <div class="question">CSS
-        <button class="show-hide">Show Reverse</button></div>
+        <button class="show-answer">Show Reverse</button></div>
     <div class="answer">Cascading Style Sheets is a language that controls the styling of the page and how it appears. It can be added or linked in the HTML style tag, and its benefit is its flexibility. CSS isn't necessary to build a webpage, but utilizing it allows design elements to be clumped and repeated throughout the layout with no inline, repetitive style attributes.
-        <button class="show-hide">Show Reverse</button>
+        <button class="show-question">Show Reverse</button>
     </div>
     <div class="question">element 
-        <button class="show-hide">Show Reverse</button>
+        <button class="show-answer">Show Reverse</button>
     </div>
     <div class="answer">Elements are the individual building blocks of HTML. Most have a beginning tag (&lt;p&gt;) and an ending tag(&lt;/p&gt;). A few tags like &lt;img&gt; and &lt;br&gt; are called empty tags and only have a starting tag.
-        <button class="show-hide">Show Reverse</button>
+        <button class="show-question">Show Reverse</button>
     </div>
     <div class="question">Elements of a Basic HTML doc
-        <button class="show-hide">Show Reverse</button>
+        <button class="show-answer">Show Reverse</button>
     </div>
     <div class="answer">&lt;!DOCTYPE html&gt; - This says this document is using HTML5<br> 
         &lt;html lang="en"&gt; - The root element. All page elements are nestled in it. lang="en" is an attribute that must always be present.<br> 
@@ -46,10 +46,10 @@
         &lt;/body&gt;<br>
         &lt;/html&gt;<br>
         Easy way - Type "!" and tab at the top of an empty .html page
-        <button class="show-hide">Show Reverse</button>
+        <button class="show-question">Show Reverse</button>
     </div>
     <div class="question">tags
-        <button class="show-hide">Show Reverse</button>
+        <button class="show-answer">Show Reverse</button>
     </div>
     <div class="answer">One half of the element. An opening tag has a beginning angle bracket(&lt;), the content (i.e. p or div), and an ending angle bracket with a forward slash(/&gt;). 
         <ul>Type Examples:
@@ -58,19 +58,26 @@
             <li>&lt;h1&gt; - heading tags make larger text by default than div or p. There are h1 through h6 with h1 being the largest. Search engines use them to structure and index content, so headings should not be used for size or boldness, only for structuring the document.</li>
             <li>&lt;a&gt; - anchor tags hold links</li>
             <li>&lt;img&gt; - image tags hold images</li>
+            <li>&lt;span&gt; - span tags hold content so CSS or JS can easily find and be applied to it.</li>
         </ul>
         <a href="https://www.w3schools.com/tags/default.asp">Tag Reference List w3schools</a>
-        <button class="show-hide">Show Reverse</button>
+        <button class="show-question">Show Reverse</button>
+    </div>
+    <div class="question">links
+        <button class="show-answer">Show Reverse</button>
+    </div>
+    <div class="answer">A link can be any HTML element like a button though it is usually text or an image. E.g. &lt;a href="default.asp"&gt;&lt;img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"&gt;&lt;/a&gt; 
+        <button class="show-question">Show Reverse</button>
     </div>
     <div class="question">attributes
-        <button class="show-hide">Show Reverse</button>
+        <button class="show-answer">Show Reverse</button>
     </div>
     <div class="answer">Give extra information about the element they live in. All elements can have one or more attributes. They always appear in the starting tag of the element they belong to. In &lt;a href="google.com"&gt;Google link&lt;/a&gt;, &lt;a&gt; is the anchor element to hold a link, href="" is the attribute that holds the destination URL, and Google link is the inner HTML that will be the hyperlink.<br>
     Attributes are usually structured like name_of_attribute = "value_of_attribute".
-        <button class="show-hide">Show Reverse</button>
+        <button class="show-question">Show Reverse</button>
     </div>
     <div class="question">&lt;img&gt; element attributes: src, width/height, alt, and style
-        <button class="show-hide">Show Reverse</button>
+        <button class="show-answer">Show Reverse</button>
     </div>
     <div class="answer">
         <ol>src=""
@@ -90,20 +97,20 @@
             <li>i.e. style="color: red"</li>
         </ol>
         <a href="https://www.w3schools.com/tags/ref_attributes.asp">Attribute Reference List w3schools</a>
-        <button class="show-hide">Show Reverse</button>
+        <button class="show-question">Show Reverse</button>
     </div>
     <div class="question">accessibility tips with attributes: alt, title
         
-        <button class="show-hide">Show Reverse</button>
+        <button class="show-answer">Show Reverse</button>
     </div>
     <div class="answer"><ol>
         <li>&lt;img alt=""&gt; - If the image cannot be displayed, the text will appear instead, and it will also help screen readers describe to visually impaired users what the image contains. Mostly seen with the img element.</li>
         <li>&lt;p title=""&gt; - this attribute makes extra information appear whenever the user hovers over this element. Can be used with most elements.</li>
     </ol>
-        <button class="show-hide">Show Reverse</button>
+        <button class="show-question">Show Reverse</button>
     </div>
     <div class="question">format a paragraph with new lines, visible line break, block text that recognizes spacing, and block quotations
-        <button class="show-hide">Show Reverse</button>
+        <button class="show-answer">Show Reverse</button>
     </div>
     <div class="answer">
         <ul>
@@ -120,10 +127,10 @@
                 <blockquote cite="https://www.indiewire.com/2018/07/steven-universe-queer-rebecca-sugar-1201983866/">In the Season 1 finale “Jail Break,” it is revealed that Steven’s guardian, Garnet, is the product of a romantic fusion between Ruby and Sapphire. Garnet is the living embodiment of a normalized lesbian romance, as her song goes, “I’m made of love.” The origin story of Garnet’s fusion form is told with Disney fairy tale flair in season two’s “The Answer.” After narrowly escaping a shattering (i.e. a death sentence in their culture) due to their forbidden fusion, Ruby and Sapphire sing their signature song number “Something Entirely New” to ponder the emotional mysteries and anxieties of loving outside social constraints.</blockquote>
             </li>
         </ul>
-        <button class="show-hide">Show Reverse</button>
+        <button class="show-question">Show Reverse</button>
     </div>
     <div class="question">text formatting: <b>bold</b>, <strong>strong</strong>, <i>italic</i>, <em>emphasized</em>, <sub>subscript</sub>, <sup>superscript</sup>, <mark>highlighted</mark>, <abbr title="abbreviations">ABBR</abbr>
-        <button class="show-hide">Show Reverse</button>
+        <button class="show-answer">Show Reverse</button>
     </div>
     <div class="answer">
         <ul>
@@ -136,10 +143,10 @@
             <li>&lt;mark&gt; - inner HTML is hightlighted </li>
             <li>&lt;abbr title=""&gt; - shows user what abbreviation stands for in mouse over</li>
         </ul>
-        <button class="show-hide">Show Reverse</button>
+        <button class="show-question">Show Reverse</button>
     </div>
     <div class="question">HTML & Color: RGB & RGBA
-        <button class="show-hide">Show Reverse</button>
+        <button class="show-answer">Show Reverse</button>
     </div>
     <div class="answer">
         <ul>
@@ -158,10 +165,10 @@
         <ul>Syntax for all color use: 
             <li>CSS - body {background-color:rgb(255, 95, 71)}</li>
             <li>Inline HTML - &lt;h1 style="background-color:rgb(255, 95, 71)"&gt;</li>
-        <button class="show-hide">Show Reverse</button>
+        <button class="show-question">Show Reverse</button>
     </div>
     <div class="question">HTML & Color: HEX
-        <button class="show-hide">Show Reverse</button>
+        <button class="show-answer">Show Reverse</button>
     </div>
     <div class="answer">
     <ul>HEX (hexidecimal: rrggbb) - each digit is from least to most intense (0-9, then a-f)
@@ -174,10 +181,10 @@
             <li>GREY = (all values equal) #404040 or #dcdcdc</li>
         </ol>
     </ul>
-        <button class="show-hide">Show Reverse</button>
+        <button class="show-question">Show Reverse</button>
     </div>
     <div class="question">HTML & Color: HSL & HSLA
-        <button class="show-hide">Show Reverse</button>
+        <button class="show-answer">Show Reverse</button>
     </div>
     <div class="answer">
         <li>HSL (hue, saturation, light) - hue is a degree on the color wheel (0-360), saturation is a % value (0% is grey - 100% is full color), and light is a % value (0% is black - 100% is white)
@@ -192,37 +199,37 @@
         </li>
         <li>HSLA (hsl with alpha as an opacity value). 0.0 is fully transparent to 1.0 is fully opaque.</li>
     </ul>
-        <button class="show-hide">Show Reverse</button>
+        <button class="show-question">Show Reverse</button>
     </div>
     <div class="question">forms
-        <button class="show-hide">Show Reverse</button>
+        <button class="show-answer">Show Reverse</button>
     </div>
     <div class="answer">
-        <button class="show-hide">Show Reverse</button>
+        <button class="show-question">Show Reverse</button>
     </div>
     <div class="question">selectors
-        <button class="show-hide">Show Reverse</button>
+        <button class="show-answer">Show Reverse</button>
     </div>
     <div class="answer">
-        <button class="show-hide">Show Reverse</button>
+        <button class="show-question">Show Reverse</button>
     </div>
     <div class="question">properties
-        <button class="show-hide">Show Reverse</button>
+        <button class="show-answer">Show Reverse</button>
     </div>
     <div class="answer">
-        <button class="show-hide">Show Reverse</button>
+        <button class="show-question">Show Reverse</button>
     </div>
     <div class="question">values
-        <button class="show-hide">Show Reverse</button>
+        <button class="show-answer">Show Reverse</button>
     </div>
     <div class="answer">
-        <button class="show-hide">Show Reverse</button>
+        <button class="show-question">Show Reverse</button>
     </div>
     <div class="question">query string in the URL and what it does
-        <button class="show-hide">Show Reverse</button>
+        <button class="show-answer">Show Reverse</button>
     </div>
     <div class="answer">
-        <button class="show-hide">Show Reverse</button>
+        <button class="show-question">Show Reverse</button>
     </div>
     
     <footer >Number of w3schools HTML Tutorial sections completed: 14/76. Cards created: <span id="countCards"></span></footer>
